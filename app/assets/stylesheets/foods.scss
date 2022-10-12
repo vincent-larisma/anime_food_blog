@@ -1,0 +1,18 @@
+// Place all the styles related to the foods controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body > footer {
+  margin-top: auto;
+}
+
+footer {
+  padding: 2rem 1rem 2rem !important;
+  background-color: rgb(39, 39, 39) !important;
+}

@@ -1,0 +1,31 @@
+<section class="section">
+
+<div class="container">
+
+<h1 class="title">Foods List</h1>
+
+<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+
+<tr><th>ID</th><th>FOOD</th><th>ANIME NAME</th><th>RECIPE</th><th>ACTIONS</th></tr>
+<% @foods.each do |table_item|%>
+
+<tr>
+<td><%= table_item.id %></td>
+<td><%=  table_item.food_title%></td>
+<td><%= table_item.anime_name %></td>
+<td><%= table_item.anime_food_recipe %></td>
+<td>
+<button class="button is-info"><%= link_to "SHOW", foods_show_path(table_item.id), class: "has-text-white" %></button>
+<button class="button is-info"><%= link_to "EDIT", list_edit_food_path(table_item.id) , class: "has-text-white"%></button>
+<button class="button is-info"><%= link_to "DELETE", destroy_listed_food_path(table_item.id),
+                  method: :delete,
+                  data: { confirm: "ARE YOU SURE?" } , class: "has-text-white" %></button>
+
+</td>
+</tr>
+<% end %>
+</table>
+<button class="button is-info"><%= link_to "Create New", list_new_food_path, class: "has-text-white" %></button>
+
+</div>
+</section>

@@ -1,0 +1,21 @@
+
+<%= form_with model: @foods, html: { class: "field" } do |form| %>
+  
+  <%= form.label "Food Title", class: "label"  %>
+  <div class="control">
+  <%= form.text_field :food_title, class: "input" %>
+  </div>
+  <%= form.label "Anime from?", class: "label"  %>
+  <div class="control">
+  <%= form.text_field :anime_name, class: "input" %>
+  </div>
+  <%= form.label "Anime Food Recipe", class: "label" %>
+  <div class="control">
+  <%= form.text_area :anime_food_recipe, class: "textarea" %>
+  </div>
+ <div class="field"><p class="control">
+  <%= form.submit "Submit", class: "button is-primary mt-4" %>
+ </p></div>
+
+
+<% end %>

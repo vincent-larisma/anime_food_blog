@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  food_title: MyString
+  anime_name: MyString
+  anime_food_recipe: MyString
+
+two:
+  food_title: MyString
+  anime_name: MyString
+  anime_food_recipe: MyString

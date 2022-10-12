@@ -37,6 +37,17 @@ footer {
   backdrop-filter: blur(3.1px) !important;
   -webkit-backdrop-filter: blur(3.1px) !important;
   border: 1px solid rgba(255, 255, 255, 0.24) !important;
+
+  &:hover{
+    background-color: white !important;
+    -webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+    .has-text-white {
+    color: black !important;;
+    }
+  }
+  
 }
 
 // .column {

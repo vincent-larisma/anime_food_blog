@@ -19,7 +19,7 @@ class FoodsController < ApplicationController
     @foods = Food.new(food_params)
 
     if @foods.save
-      redirect_to foods_path
+      redirect_to foods_path, notice: 'Anime Food was successfully created'
     else
       render :new
     end
@@ -33,7 +33,7 @@ class FoodsController < ApplicationController
     @foods = Food.find(params[:id])
 
     if @foods.update(food_params)
-      redirect_to foods_path
+      redirect_to foods_path, notice: 'Anime Food was successfully edited'
     else
       render :edit
     end

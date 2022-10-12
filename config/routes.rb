@@ -3,10 +3,10 @@ Rails.application.routes.draw do
 
   root "foods#home"
   get "/foods", to: "foods#index", as: "foods"
-  get "/foods/:id/show", to: "foods#show", as: "foods_show"
+  get "/foods/show/:id", to: "foods#show", as: "foods_show"
   get "/foods/new", to: "foods#new", as: "list_new_food"
   post "/foods", to: "foods#create"
-  get "/foods/:id/edit", to: "foods#edit", as: "list_edit_food"
+  get "/foods/edit/:id", to: "foods#edit", as: "list_edit_food"
   patch "/foods/:id", to: "foods#update"
   delete "/foods/:id", to: "foods#destroy", as: "destroy_listed_food"
 end

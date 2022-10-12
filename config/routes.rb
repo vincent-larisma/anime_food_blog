@@ -9,5 +9,4 @@ Rails.application.routes.draw do
   get "/foods/:id/edit", to: "foods#edit", as: "list_edit_food"
   patch "/foods/:id", to: "foods#update"
   delete "/foods/:id", to: "foods#destroy", as: "destroy_listed_food"
-
 end

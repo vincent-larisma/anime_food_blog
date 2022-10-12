@@ -17,8 +17,13 @@ footer {
   background-color: rgb(39, 39, 39) !important;
 }
 
+.section-background-color {
+  background-color: rgb(39, 39, 39) !important;
+
+}
+
 .hero-image {
-  background-image: url('https://sm.ign.com/ign_ap/screenshot/default/8c77_m1tg.jpg');
+  background-image: url("https://sm.ign.com/ign_ap/screenshot/default/8c77_m1tg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -32,4 +37,17 @@ footer {
   backdrop-filter: blur(3.1px) !important;
   -webkit-backdrop-filter: blur(3.1px) !important;
   border: 1px solid rgba(255, 255, 255, 0.24) !important;
+}
+
+// .column {
+//   display: flex !important;
+// }
+
+.card {
+  border-radius: 2rem !important;
+}
+
+
+.card-footer-item{
+  cursor: pointer;
 }

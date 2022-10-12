@@ -1,5 +1,9 @@
 class FoodsController < ApplicationController
 
+    def home
+        
+    end
+
     def index
         @foods = Food.all
     end

@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   root "foods#home"
+  get "/about", to: "foods#about"
   get "/foods", to: "foods#index", as: "foods"
   get "/foods/show/:id", to: "foods#show", as: "foods_show"
   get "/foods/new", to: "foods#new", as: "list_new_food"

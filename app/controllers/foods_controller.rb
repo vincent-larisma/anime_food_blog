@@ -1,10 +1,15 @@
 class FoodsController < ApplicationController
+
+  before_action :foods_show_all, only: [:home, :index]
+  before_action :foods_get_id, only: [:show, :edit, :update, :destroy]
+
   def home
-    @foods =  Food.all
+  end
+
+  def about
   end
 
   def index
-    @foods = Food.all
   end
 
   def show
@@ -26,12 +31,9 @@ class FoodsController < ApplicationController
   end
 
   def edit
-    @foods = Food.find(params[:id])
   end
 
   def update
-    @foods = Food.find(params[:id])
-
     if @foods.update(food_params)
       redirect_to foods_path, notice: 'Anime Food was successfully edited'
     else
@@ -40,14 +42,21 @@ class FoodsController < ApplicationController
   end
 
   def destroy
-    @foods = Food.find(params[:id])
-
     redirect_to foods_path if @foods.destroy
   end
 
   private
 
+  def foods_show_all
+    @foods =  Food.all.order(created_at: :asc)
+  end
+
+  def foods_get_id
+    @foods = Food.find(params[:id])
+  end
+  
   def food_params
     params.require(:food).permit(:food_title, :anime_name, :anime_food_recipe)
   end
+  
 end

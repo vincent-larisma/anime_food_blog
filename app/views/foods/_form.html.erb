@@ -1,20 +1,31 @@
 
-<%= form_with model: @foods, html: { class: "field" } do |form| %>
+<%= form_with model: @foods, html: { class: "field" }, url: {action: action} do |form| %>
   
-  <%= form.label "Food Title", class: "label"  %>
+  <%= form.label "Food Title", class: "label is-medium"  %>
+
   <div class="control">
-  <%= form.text_field :food_title, class: "input" %>
+  <%= form.text_field :food_title, class: "input is-medium" %>
   </div>
-  <%= form.label "Anime from?", class: "label"  %>
+    <% @foods.errors.full_messages_for(:food_title).each do |message| %>
+    <div class="notification is-danger"><%= message %></div>
+  <% end %>
+  <%= form.label "Anime from?", class: "label is-medium"  %>
+  
   <div class="control">
-  <%= form.text_field :anime_name, class: "input" %>
+  <%= form.text_field :anime_name, class: "input is-medium" %>
+   <% @foods.errors.full_messages_for(:anime_name).each do |message| %>
+    <div class="notification is-danger"><%= message %></div>
+  <% end %>
   </div>
-  <%= form.label "Anime Food Recipe", class: "label" %>
+  <%= form.label "Anime Food Recipe", class: "label is-medium" %>
   <div class="control">
   <%= form.text_area :anime_food_recipe, class: "textarea" %>
+    <% @foods.errors.full_messages_for(:anime_food_recipe).each do |message| %>
+    <div class="notification is-danger"><%= message %></div>
+  <% end %>
   </div>
  <div class="field"><p class="control">
-  <%= form.submit "Submit", class: "button is-primary mt-4" %>
+  <%= form.submit "Submit", class: "button is-primary mt-4 is-medium" %>
  </p></div>
 
 

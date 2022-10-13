@@ -1,13 +1,14 @@
 <nav class="navbar has-shadow is-white" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item title"><img src="https://www.pngmart.com/files/Anime-Food-PNG-Free-Download.png" alt="logo" style="max-height: 70px;" class="p-2"> Ghibli Food Blog </a>
+    <a href="/"class="navbar-item title"><img src="https://www.pngmart.com/files/Anime-Food-PNG-Free-Download.png" alt="logo" style="max-height: 70px;" class="p-2"> Ghibli Food Blog </a>
   </div>
   <div class="navbar-menu">
   <div class="navbar-end">
   
-  <a class="navbar-item">About</a>
-  <a class="navbar-item">All Food Recipes</a>
-  <a class="navbar-item">Check Out Source Code</a>
+  <a href="/about" class="navbar-item">About</a>
+  <%= link_to "Add New Recipe", list_new_food_path, class: "navbar-item" %>
+  <a href="/foods" class="navbar-item">All Anime Recipes</a>
+  <a href="https://github.com/vincent-larisma/anime_food_blog" target="_blank" class="navbar-item">Check Out Source Code</a>
  
   </div>
   </div>

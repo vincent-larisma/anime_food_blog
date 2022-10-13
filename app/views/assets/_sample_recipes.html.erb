@@ -1,11 +1,11 @@
 <section class="section section-background-color">
 <div class="content has-text-centered is-medium mb-6">
-<h1><strong class="has-text-white">Anime Food Recipe</strong></h1>
+<h1><strong>&#10024; Anime Food Recipe &#10024;</strong></h1>
 </div>
 
 <div class="container pb-6">
 <div class="columns">
-<% @foods[0...3].each do |card_item| %>
+<% @foods[0...2].each do |card_item| %>
 <div class="column">
 <div class="card">
   <div class="card-content">
@@ -25,20 +25,10 @@
     </div>
   </div>
   <div class="card-footer">
-    <p class="card-footer-item"><i class="fa-regular fa-eye"></i>-<%= link_to "SHOW", foods_show_path(card_item.id), class: "has-text-black" %>
-
-    </p>
-    <p class="card-footer-item">
-    <i class="fa-regular fa-pen-to-square"></i>-
-<%= link_to "EDIT", list_edit_food_path(card_item.id) , class: "has-text-black"%>
-      
-    </p>
-    <p class="card-footer-item">
-    <i class="fa-solid fa-trash"></i>-
-      <%= link_to "DELETE", destroy_listed_food_path(card_item.id),
-                  method: :delete,
-                  data: { confirm: "ARE YOU SURE?" } , class: "has-text-black" %>
-    </p>
+  <a class="has-text-black card-footer-item" href="/foods/show/<%= card_item.id %>">
+    <i class="fa-regular fa-eye"></i>-SHOW 
+    
+  </a>
 </div>
 </div>
 </div>
@@ -47,3 +37,4 @@
 </div>
 
 </section>
+

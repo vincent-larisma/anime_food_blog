@@ -14,12 +14,11 @@ body > footer {
 
 footer {
   padding: 2rem 1rem 2rem !important;
-  background-color: rgb(39, 39, 39) !important;
+  background-color: rgb(23, 23, 23) !important;
 }
 
 .section-background-color {
-  background-color: rgb(39, 39, 39) !important;
-
+  background-color: #ffe694 !important;
 }
 
 .hero-image {
@@ -44,21 +43,40 @@ footer {
     -ms-transition: background-color 100ms linear;
     transition: background-color 100ms linear;
     .has-text-white {
-    color: black !important;;
+    color: black !important;
     }
   }
   
 }
-
-// .column {
-//   display: flex !important;
-// }
 
 .card {
   border-radius: 2rem !important;
 }
 
 
-.card-footer-item{
-  cursor: pointer;
+
+
+.card-footer a {
+  border-radius: 0rem 0rem  2rem 2rem;
+  &:hover{
+    background-color: rgb(234, 234, 234) !important;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+    color: white !important;
+  }
 }
+
+.button-bigger {
+  transition: .2s, transform 300ms;
+  &:hover{
+    background-color: rgb(234, 234, 234) !important;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+    transform: scale(1.1); 
+  }
+}
+
+
+

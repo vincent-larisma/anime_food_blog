@@ -5,15 +5,14 @@
 <div class="content has-text-centered is-medium mb-6">
 <h1><strong>&#127857; <%= @foods.food_title %> &#127857;</strong></h1>
 <h2>Anime From <%= @foods.anime_name %></h2>
-</div>
+</div>  
 <div class="container content">
 <h2>Recipe :</h2>
-
 <div class="column box"><%= @foods.anime_food_recipe %></div>
 <div class="columns is-centered has-text-centered ">
-    <a href="/foods/edit/4" class="column is-1 card button-bigger"><i class="fa-regular fa-pen-to-square"></i>-EDIT</a>
+    <a href="/foods/edit/<%=@foods.id%>" class="column is-1 card button-bigger"><i class="fa-regular fa-pen-to-square"></i>-EDIT</a>
     <div class="column is-0"></div>
-    <a data-confirm="ARE YOU SURE?" rel="nofollow" data-method="delete" href="/foods/4" class="column is-1 card button-bigger"><i class="fa-solid fa-trash"></i></i>-DELETE</a>
+    <a data-confirm="ARE YOU SURE?" rel="nofollow" data-method="delete" href="/foods/<%=@foods.id%>" class="column is-1 card button-bigger"><i class="fa-solid fa-trash"></i></i>-DELETE</a>
 </div>
 </div>
 </section>

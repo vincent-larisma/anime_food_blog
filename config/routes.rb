@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   get "/foods/new", to: "foods#new", as: "list_new_food"
   post "/foods", to: "foods#create"
   get "/foods/edit/:id", to: "foods#edit", as: "list_edit_food"
-  patch "/foods/:id", to: "foods#update"
+  patch "/foods/show/:id", to: "foods#update"
   delete "/foods/:id", to: "foods#destroy", as: "destroy_listed_food"
 end

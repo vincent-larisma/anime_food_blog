@@ -35,7 +35,7 @@ class FoodsController < ApplicationController
 
   def update
     if @foods.update(food_params)
-      redirect_to foods_path, notice: 'Anime Food was successfully edited'
+      redirect_to foods_show_path, notice: 'Anime Food was successfully edited'
     else
       render :edit
     end

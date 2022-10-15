@@ -22,7 +22,7 @@ footer {
 }
 
 .hero-image {
-  background-image: url("https://sm.ign.com/ign_ap/screenshot/default/8c77_m1tg.jpg");
+  background-image: url('https://sm.ign.com/ign_ap/screenshot/default/8c77_m1tg.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -37,28 +37,24 @@ footer {
   -webkit-backdrop-filter: blur(3.1px) !important;
   border: 1px solid rgba(255, 255, 255, 0.24) !important;
 
-  &:hover{
+  &:hover {
     background-color: white !important;
     -webkit-transition: background-color 100ms linear;
     -ms-transition: background-color 100ms linear;
     transition: background-color 100ms linear;
     .has-text-white {
-    color: black !important;
+      color: black !important;
     }
   }
-  
 }
 
 .card {
   border-radius: 2rem !important;
 }
 
-
-
-
 .card-footer a {
-  border-radius: 0rem 0rem  2rem 2rem;
-  &:hover{
+  border-radius: 0rem 0rem 2rem 2rem;
+  &:hover {
     background-color: rgb(234, 234, 234) !important;
     -webkit-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
@@ -68,15 +64,41 @@ footer {
 }
 
 .button-bigger {
-  transition: .2s, transform 300ms;
-  &:hover{
+  transition: 0.2s, transform 300ms;
+  &:hover {
     background-color: rgb(234, 234, 234) !important;
     -webkit-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
-    transform: scale(1.1); 
+    transform: scale(1.1);
   }
 }
 
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: white gray;
+}
 
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
 
+*::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 5rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 20px;
+  border: 3px solid white;
+}
+
+textarea {
+  border: 1px solid #999999;
+  width: 100%;
+  margin: 5px 0;
+  padding: 3px;
+}

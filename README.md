@@ -6,8 +6,8 @@
 - Users can edit and delete specific food recipes utilizing CRUD in Ruby on Rails.
 - Utilized HTML emoji to accentuate a cleaner and better look in implementing Bulma.
 
-### Website Images
-**website deployment link is not available due to deployment billing**
+### Website Images (**website deployment link is not available due to deployment billing**)
+
 ![image](https://user-images.githubusercontent.com/103049779/203803321-805b32ba-c676-405c-90dd-7e2d8ddae682.png)
 ![image](https://user-images.githubusercontent.com/103049779/203804135-f4089260-1d17-475b-a297-da94bf347276.png)
 ![image](https://user-images.githubusercontent.com/103049779/203804202-eb4bb47e-c41c-411f-ad3c-1f814e2211af.png)
